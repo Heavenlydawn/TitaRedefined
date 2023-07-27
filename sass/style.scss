@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Great+Vibes&family=Hanken+Grotesk:wght@500;700;800&family=Manrope:wght@500;600;700;800&family=Montserrat:wght@300;400;500;600;700;800;900&family=Nunito:wght@600;700;800&family=Wix+Madefor+Text:wght@400;500;800&display=swap");
+
+/*
+=========
+Variables
+=========
+*/
+$font_family: "Montserrat", sans-serif;
+$bg_light: #7a91ca;
+$bg_medium: #5064ae;
+$bg_gradient: linear-gradient(108deg, #5064ae 0%, #8798e3 100%);
+$bg_gradient_light: linear-gradient(
+  122deg,
+  rgba(238, 237, 246, 0) 0.51%,
+  rgba(60, 97, 181, 0.3) 100%
+);
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

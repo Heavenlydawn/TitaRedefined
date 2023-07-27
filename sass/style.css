@@ -1,1 +1,13 @@
-/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Great+Vibes&family=Hanken+Grotesk:wght@500;700;800&family=Manrope:wght@500;600;700;800&family=Montserrat:wght@300;400;500;600;700;800;900&family=Nunito:wght@600;700;800&family=Wix+Madefor+Text:wght@400;500;800&display=swap");
+/*
+=========
+Variables
+=========
+*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}/*# sourceMappingURL=style.css.map */
