@@ -66,7 +66,7 @@ body {
   letter-spacing: 0.059px;
 }
 .btn_light:hover {
-  background:$bg_gradient;
+  background: $bg_gradient;
   color: $neutral;
   border: none;
   transition: $transition;
@@ -192,13 +192,78 @@ Loop Section
     letter-spacing: 0.059px;
     padding: 20px 0;
   }
-
-  /*
-=========
-Key Frames
-=========
-*/
 }
+
+/*
+  ==========
+  Solution Section
+  ==========
+  */
+
+#solution .solution {
+  margin-block-start: 174px;
+  &_header {
+    text-align: center;
+    width: 780px;
+    margin: 0 auto;
+    h2 {
+      font-size: 80px;
+      font-weight: 500;
+      line-height: 21.657px;
+      letter-spacing: 0.059px;
+      margin-block-end: 60px;
+    }
+    p {
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 30px;
+      letter-spacing: 0.059px;
+    }
+  }
+  &_cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-block-start: 65px;
+    .solution_card {
+      width: 456px;
+      height: 336px;
+      border-radius: 10px;
+      background: #fff;
+      box-shadow: 1px 1px 34px 10px rgba(187, 187, 187, 0.15);
+      padding: 20px;
+      &_img {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        margin-block-start: 80px;
+        p {
+          color: $font_color;
+          font-size: 20px;
+          font-weight: 600;
+          line-height: 21.657px;
+          letter-spacing: 0.059px;
+        }
+      }
+      &_content {
+
+        p {
+          margin-block-start: 50px;
+          font-size: 20px;
+          font-weight: 500;
+          line-height: 30px;
+          letter-spacing: 0.059px;
+        }
+      }
+    }
+  }
+}
+/*
+===========
+Key Frames
+===========
+*/
 @keyframes loop {
   from {
     transform: translateX(0%);

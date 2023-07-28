@@ -162,11 +162,6 @@ Loop Section
   display: flex;
   justify-content: space-evenly;
   background: linear-gradient(181deg, rgba(94, 83, 182, 0.05) 0.51%, rgba(77, 104, 161, 0.04) 73.96%);
-  /*
-  =========
-  Key Frames
-  =========
-  */
 }
 #loop .loop_flow {
   animation: loop 25s linear infinite;
@@ -183,6 +178,73 @@ Loop Section
   padding: 20px 0;
 }
 
+/*
+  ==========
+  Solution Section
+  ==========
+  */
+#solution .solution {
+  margin-block-start: 174px;
+}
+#solution .solution_header {
+  text-align: center;
+  width: 780px;
+  margin: 0 auto;
+}
+#solution .solution_header h2 {
+  font-size: 80px;
+  font-weight: 500;
+  line-height: 21.657px;
+  letter-spacing: 0.059px;
+  margin-block-end: 60px;
+}
+#solution .solution_header p {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0.059px;
+}
+#solution .solution_cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-block-start: 65px;
+}
+#solution .solution_cards .solution_card {
+  width: 456px;
+  height: 336px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 1px 1px 34px 10px rgba(187, 187, 187, 0.15);
+  padding: 20px;
+}
+#solution .solution_cards .solution_card_img {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-block-start: 80px;
+}
+#solution .solution_cards .solution_card_img p {
+  color: #5064ae;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 21.657px;
+  letter-spacing: 0.059px;
+}
+#solution .solution_cards .solution_card_content p {
+  margin-block-start: 50px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0.059px;
+}
+
+/*
+===========
+Key Frames
+===========
+*/
 @keyframes loop {
   from {
     transform: translateX(0%);
