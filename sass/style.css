@@ -316,9 +316,32 @@ Loop Section
   gap: 30px;
 }
 #solution .solution #manage .manage_cards .manage_card {
+  width: 456px;
+  height: 336px;
   border-radius: 10px;
   background: #fff;
+  padding: 15px;
   box-shadow: 1px 1px 34px 10px rgba(187, 187, 187, 0.15);
+}
+#solution .solution #manage .manage_cards .manage_card_img {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-block-start: 80px;
+}
+#solution .solution #manage .manage_cards .manage_card_img p {
+  color: #5064ae;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 21.657px;
+  letter-spacing: 0.059px;
+}
+#solution .solution #manage .manage_cards .manage_card_content p {
+  margin-block-start: 50px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0.059px;
 }
 
 /*

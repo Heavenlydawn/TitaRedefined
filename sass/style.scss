@@ -349,10 +349,34 @@ Loop Section
       align-items: center;
       gap: 30px;
       .manage_card {
+        width: 456px;
+        height: 336px;
         border-radius: 10px;
         background: #fff;
+        padding: 15px;
         box-shadow: 1px 1px 34px 10px rgba(187, 187, 187, 0.15);
-        
+        &_img {
+          display: flex;
+          align-items: center;
+          gap: 14px;
+          margin-block-start: 80px;
+          p {
+            color: $font_color;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 21.657px;
+            letter-spacing: 0.059px;
+          }
+        }
+        &_content {
+          p {
+            margin-block-start: 50px;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 30px;
+            letter-spacing: 0.059px;
+          }
+        }
       }
     }
   }
