@@ -1,7 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Great+Vibes&family=Hanken+Grotesk:wght@500;700;800&family=Manrope:wght@500;600;700;800&family=Montserrat:wght@300;400;500;600;700;800;900&family=Nunito:wght@600;700;800&family=Wix+Madefor+Text:wght@400;500;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Great+Vibes&family=Hanken+Grotesk:wght@500;700;800&family=Manrope:wght@500;600;700;800&family=Montserrat:wght@300;400;500;600;700;800;900&family=Nunito:wght@600;700;800&family=Poppins:wght@900&family=Wix+Madefor+Text:wght@400;500;800&display=swap");
 /*
 =========
 Variables
+=========
+*/
+/*
+=========
+General Selector
 =========
 */
 *,
@@ -10,4 +15,179 @@ Variables
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  width: calc(100vw - 20px);
+  max-width: 1900px;
+  margin: 0 auto;
+}
+
+.btn {
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn_light {
+  border: 3px solid #5064ae;
+  background: #fff;
+  height: 80px;
+  padding: 0px 66px;
+  text-align: center;
+  color: #5064ae;
+  font-size: 23px;
+  font-weight: 600;
+  line-height: 21.657px;
+  letter-spacing: 0.059px;
+}
+
+.btn_light:hover {
+  background: linear-gradient(108deg, #5064ae 0%, #8798e3 100%);
+  color: #fff;
+  border: none;
+  transition: all 0.3s linear;
+}
+
+.btn_gradient {
+  width: 309px;
+  height: 80px;
+  padding: 0px 23px 0px 22px;
+  background: linear-gradient(108deg, #5064ae 0%, #8798e3 100%);
+  color: #fff;
+  text-align: center;
+  font-size: 23px;
+  font-weight: 600;
+  line-height: 21.657px;
+  letter-spacing: 0.059px;
+}
+
+.btn_gradient:hover {
+  background: #fff;
+  color: #5064ae;
+  border: 3px solid #5064ae;
+}
+
+/*
+=========
+Header Section
+=========
+*/
+#header header {
+  width: 100%;
+}
+#header header .nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#header header .nav_left .nav-toggle {
+  display: none;
+}
+#header header .nav_right {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+#header header .nav_right li a {
+  color: #000;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 21.657px;
+  letter-spacing: 0.059px;
+}
+
+/*
+=========
+Hero Section
+=========
+*/
+#hero .hero {
+  height: 70vh;
+  margin: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#hero .hero_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 1148px;
+}
+#hero .hero_content h1 {
+  color: #5064ae;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 100px;
+  font-weight: 900;
+  letter-spacing: 0.045px;
+}
+#hero .hero_content p {
+  color: #000;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28.7px;
+  letter-spacing: 0.059px;
+}
+#hero .hero_content_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 41px;
+}
+
+/*
+=========
+Loop Section
+=========
+*/
+#loop .loop {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-evenly;
+  background: linear-gradient(181deg, rgba(94, 83, 182, 0.05) 0.51%, rgba(77, 104, 161, 0.04) 73.96%);
+  /*
+  =========
+  Key Frames
+  =========
+  */
+}
+#loop .loop_flow {
+  animation: loop 25s linear infinite;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  color: #000;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21.657px;
+  letter-spacing: 0.059px;
+  padding: 20px 0;
+}
+
+@keyframes loop {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(100%);
+  }
 }/*# sourceMappingURL=style.css.map */

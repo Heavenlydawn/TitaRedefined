@@ -1,11 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Great+Vibes&family=Hanken+Grotesk:wght@500;700;800&family=Manrope:wght@500;600;700;800&family=Montserrat:wght@300;400;500;600;700;800;900&family=Nunito:wght@600;700;800&family=Wix+Madefor+Text:wght@400;500;800&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Great+Vibes&family=Hanken+Grotesk:wght@500;700;800&family=Manrope:wght@500;600;700;800&family=Montserrat:wght@300;400;500;600;700;800;900&family=Nunito:wght@600;700;800&family=Poppins:wght@900&family=Wix+Madefor+Text:wght@400;500;800&display=swap");
 /*
 =========
 Variables
 =========
 */
 $font_family: "Montserrat", sans-serif;
+$font_family_secondary: "Poppins", sans-serif;
+$neutral: #fff;
+$black: #000;
+$font_color: #5064ae;
 $bg_light: #7a91ca;
 $bg_medium: #5064ae;
 $bg_gradient: linear-gradient(108deg, #5064ae 0%, #8798e3 100%);
@@ -14,11 +17,193 @@ $bg_gradient_light: linear-gradient(
   rgba(238, 237, 246, 0) 0.51%,
   rgba(60, 97, 181, 0.3) 100%
 );
-$box-shadow:-2px -2px 24px 0px rgba(0, 0, 0, 0.20);
+$box-shadow: -2px -2px 24px 0px rgba(0, 0, 0, 0.2);
+$transition: all 0.3s linear;
+$light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+$dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+$max-width: 1900px;
+/*
+=========
+General Selector
+=========
+*/
+
 *,
 *::before,
 *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+body {
+  font-family: $font_family;
+  width: calc(100vw - 20px);
+  max-width: $max-width;
+  margin: 0 auto;
+}
+.btn {
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.btn_light {
+  border: 3px solid $bg_medium;
+  background: $neutral;
+  height: 80px;
+  padding: 0px 66px;
+  text-align: center;
+  color: $font_color;
+  font-size: 23px;
+  font-weight: 600;
+  line-height: 21.657px;
+  letter-spacing: 0.059px;
+}
+.btn_light:hover {
+  background:$bg_gradient;
+  color: $neutral;
+  border: none;
+  transition: $transition;
+}
+.btn_gradient {
+  width: 309px;
+  height: 80px;
+  padding: 0px 23px 0px 22px;
+  background: $bg_gradient;
+  color: $neutral;
+  text-align: center;
+  font-size: 23px;
+  font-weight: 600;
+  line-height: 21.657px;
+  letter-spacing: 0.059px;
+}
+.btn_gradient:hover {
+  background: $neutral;
+  color: $font_color;
+  border: 3px solid $bg_medium;
+}
+/*
+=========
+Header Section
+=========
+*/
+#header header {
+  width: 100%;
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &_left {
+      .nav-toggle {
+        display: none;
+      }
+    }
+    &_right {
+      display: flex;
+      align-items: center;
+      gap: 100px;
+      li {
+        a {
+          color: $black;
+          font-size: 17px;
+          font-weight: 600;
+          line-height: 21.657px;
+          letter-spacing: 0.059px;
+        }
+      }
+    }
+  }
+}
+/*
+=========
+Hero Section
+=========
+*/
+#hero .hero {
+  height: 70vh;
+  margin: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 1148px;
+    h1 {
+      color: #5064ae;
+      text-align: center;
+      font-family: $font_family_secondary;
+      font-size: 100px;
+      font-weight: 900;
+      letter-spacing: 0.045px;
+    }
+    p {
+      color: $black;
+      text-align: center;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 28.7px;
+      letter-spacing: 0.059px;
+    }
+    &_btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 50px;
+      margin-top: 41px;
+    }
+  }
+}
+/*
+=========
+Loop Section
+=========
+*/
+#loop .loop {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-evenly;
+  background: linear-gradient(
+    181deg,
+    rgba(94, 83, 182, 0.05) 0.51%,
+    rgba(77, 104, 161, 0.04) 73.96%
+  );
+  &_flow {
+    animation: loop 25s linear infinite;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    color: $black;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21.657px;
+    letter-spacing: 0.059px;
+    padding: 20px 0;
+  }
+
+  /*
+=========
+Key Frames
+=========
+*/
+}
+@keyframes loop {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(100%);
+  }
 }
