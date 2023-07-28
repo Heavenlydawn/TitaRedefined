@@ -185,6 +185,11 @@ Loop Section
   */
 #solution .solution {
   margin-block-start: 174px;
+  /*
+  ==========
+  Join Section
+  ==========
+  */
 }
 #solution .solution_header {
   text-align: center;
@@ -238,6 +243,19 @@ Loop Section
   font-weight: 500;
   line-height: 30px;
   letter-spacing: 0.059px;
+}
+#solution .solution #join .join {
+  margin-block-start: 135px;
+  background: linear-gradient(122deg, rgba(238, 237, 246, 0) 0.51%, rgba(60, 97, 181, 0.3) 100%);
+  display: flex;
+  justify-content: space-between;
+  height: 590px;
+}
+#solution .solution #join .join_left {
+  align-self: flex-end;
+}
+#solution .solution #join .join_right {
+  text-align: right;
 }
 
 /*
