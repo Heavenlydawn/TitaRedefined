@@ -52,13 +52,6 @@ body {
   letter-spacing: 0.059px;
 }
 
-.btn_light:hover {
-  background: linear-gradient(108deg, #5064ae 0%, #8798e3 100%);
-  color: #fff;
-  border: none;
-  transition: all 0.3s linear;
-}
-
 .btn_gradient {
   width: 309px;
   height: 80px;
@@ -70,12 +63,6 @@ body {
   font-weight: 600;
   line-height: 21.657px;
   letter-spacing: 0.059px;
-}
-
-.btn_gradient:hover {
-  background: #fff;
-  color: #5064ae;
-  border: 3px solid #5064ae;
 }
 
 /*
@@ -105,6 +92,9 @@ Header Section
   font-weight: 600;
   line-height: 21.657px;
   letter-spacing: 0.059px;
+}
+#header header .nav_right li a:hover {
+  color: #5064ae;
 }
 
 /*
@@ -190,6 +180,11 @@ Loop Section
   Join Section
   ==========
   */
+  /*
+  ==========
+  Join Section
+  ==========
+  */
 }
 #solution .solution_header {
   text-align: center;
@@ -222,7 +217,7 @@ Loop Section
   border-radius: 10px;
   background: #fff;
   box-shadow: 1px 1px 34px 10px rgba(187, 187, 187, 0.15);
-  padding: 20px;
+  padding: 15px;
 }
 #solution .solution_cards .solution_card_img {
   display: flex;
@@ -249,6 +244,7 @@ Loop Section
   background: linear-gradient(122deg, rgba(238, 237, 246, 0) 0.51%, rgba(60, 97, 181, 0.3) 100%);
   display: flex;
   justify-content: space-between;
+  padding: 0 50px;
   height: 590px;
 }
 #solution .solution #join .join_left {
@@ -256,6 +252,73 @@ Loop Section
 }
 #solution .solution #join .join_right {
   text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#solution .solution #join .join_right_top p {
+  font-size: 49px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0.059px;
+}
+#solution .solution #join .join_right_top button {
+  margin-block-start: 35px;
+}
+#solution .solution #join .join_right_top .music {
+  display: flex;
+}
+#solution .solution #join .join_right_top .music h2 {
+  margin-block-start: 35px;
+}
+#solution .solution #join .join_right_top .music h2 {
+  font-size: 49px;
+  font-weight: 600;
+  line-height: 21.657px;
+  letter-spacing: 0.059px;
+}
+#solution .solution #join .join_right_bottom {
+  align-self: flex-end;
+}
+#solution .solution #join .join_right_bottom p {
+  text-align: left;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 21.657px;
+  letter-spacing: 0.059px;
+  margin-block-end: 24px;
+}
+#solution .solution #manage .manage {
+  margin-block-start: 174px;
+}
+#solution .solution #manage .manage_header {
+  text-align: center;
+}
+#solution .solution #manage .manage_header h2 {
+  font-size: 80px;
+  font-weight: 500;
+  line-height: 21.657px;
+  letter-spacing: 0.059px;
+}
+#solution .solution #manage .manage_header p {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 0.059px;
+  width: 1000px;
+  text-align: center;
+  margin: 60px auto;
+}
+#solution .solution #manage .manage_cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+#solution .solution #manage .manage_cards .manage_card {
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 1px 1px 34px 10px rgba(187, 187, 187, 0.15);
 }
 
 /*

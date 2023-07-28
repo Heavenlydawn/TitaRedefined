@@ -65,12 +65,12 @@ body {
   line-height: 21.657px;
   letter-spacing: 0.059px;
 }
-.btn_light:hover {
-  background: $bg_gradient;
-  color: $neutral;
-  border: none;
-  transition: $transition;
-}
+// .btn_light:hover {
+//   background: $bg_gradient;
+//   color: $neutral;
+//   border: none;
+//   transition: $transition;
+// }
 .btn_gradient {
   width: 309px;
   height: 80px;
@@ -83,11 +83,11 @@ body {
   line-height: 21.657px;
   letter-spacing: 0.059px;
 }
-.btn_gradient:hover {
-  background: $neutral;
-  color: $font_color;
-  border: 3px solid $bg_medium;
-}
+// .btn_gradient:hover {
+//   background: $neutral;
+//   color: $font_color;
+//   border: 3px solid $bg_medium;
+// }
 /*
 =========
 Header Section
@@ -115,6 +115,9 @@ Header Section
           font-weight: 600;
           line-height: 21.657px;
           letter-spacing: 0.059px;
+          &:hover {
+            color: $font_color;
+          }
         }
       }
     }
@@ -232,7 +235,7 @@ Loop Section
       border-radius: 10px;
       background: #fff;
       box-shadow: 1px 1px 34px 10px rgba(187, 187, 187, 0.15);
-      padding: 20px;
+      padding: 15px;
       &_img {
         display: flex;
         align-items: center;
@@ -247,7 +250,6 @@ Loop Section
         }
       }
       &_content {
-
         p {
           margin-block-start: 50px;
           font-size: 20px;
@@ -259,24 +261,99 @@ Loop Section
     }
   }
 
+  /*
+  ==========
+  Join Section
+  ==========
+  */
+  #join .join {
+    margin-block-start: 135px;
+    background: $bg_gradient_light;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    height: 590px;
+    &_left {
+      align-self: flex-end;
+    }
+    &_right {
+      text-align: right;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      &_top {
+        p {
+          font-size: 49px;
+          font-weight: 600;
+          line-height: 30px;
+          letter-spacing: 0.059px;
+        }
+        button {
+          margin-block-start: 35px;
+        }
+        .music {
+          display: flex;
+          h2 {
+            margin-block-start: 35px;
+          }
+          h2 {
+            font-size: 49px;
+            font-weight: 600;
+            line-height: 21.657px;
+            letter-spacing: 0.059px;
+          }
+        }
+      }
+      &_bottom {
+        align-self: flex-end;
+        p {
+          text-align: left;
+          font-size: 20px;
+          font-weight: 500;
+          line-height: 21.657px;
+          letter-spacing: 0.059px;
+          margin-block-end: 24px;
+        }
+      }
+    }
+  }
 
   /*
   ==========
   Join Section
   ==========
   */
-  #join .join{
-    margin-block-start: 135px;
-    background: $bg_gradient_light;
-    display: flex;
-    justify-content: space-between;
-    // align-items: center;
-    height: 590px;
-    &_left{
-      align-self: flex-end;
+  #manage .manage {
+    margin-block-start: 174px;
+    &_header {
+      text-align: center;
+      h2 {
+        font-size: 80px;
+        font-weight: 500;
+        line-height: 21.657px;
+        letter-spacing: 0.059px;
+      }
+      p {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 25px;
+        letter-spacing: 0.059px;
+        width: 1000px;
+        text-align: center;
+        margin: 60px auto;
+      }
     }
-    &_right{
-      text-align: right;
+    &_cards {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      .manage_card {
+        border-radius: 10px;
+        background: #fff;
+        box-shadow: 1px 1px 34px 10px rgba(187, 187, 187, 0.15);
+        
+      }
     }
   }
 }
