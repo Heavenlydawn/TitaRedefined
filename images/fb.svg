@@ -1,5 +1,4 @@
-<svg width="25" height="30" viewBox="0 0 25 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g id="ic16-facebook">
-<path id="Icon" fill-rule="evenodd" clip-rule="evenodd" d="M17.2614 6.31641H20V2.18281C19.5284 2.12695 17.9034 2 16.0114 2C12.0625 2 9.35795 4.15313 9.35795 8.10898V11.75H5V16.3711H9.35795V28H14.6989V16.3711H18.8807L19.5455 11.75H14.6989V8.56602C14.6989 7.23047 15.1136 6.31641 17.2614 6.31641Z" fill="black"/>
-</g>
+<svg width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="51" height="51" rx="25.5" fill="#D5D5D5"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M30.2614 17.3164H33V13.1828C32.5284 13.127 30.9034 13 29.0114 13C25.0625 13 22.358 15.1531 22.358 19.109V22.75H18V27.3711H22.358V39H27.6989V27.3711H31.8807L32.5455 22.75H27.6989V19.566C27.6989 18.2305 28.1136 17.3164 30.2614 17.3164Z" fill="black"/>
 </svg>

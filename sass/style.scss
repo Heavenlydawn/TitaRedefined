@@ -38,6 +38,7 @@ General Selector
 }
 a {
   text-decoration: none;
+  color: $black;
 }
 li {
   list-style: none;
@@ -47,6 +48,13 @@ body {
   width: calc(100vw - 20px);
   max-width: $max-width;
   margin: 0 auto;
+}
+span {
+  color: $font_color;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 20.7px;
+  letter-spacing: 0.059px;
 }
 .btn {
   outline: none;
@@ -480,7 +488,7 @@ Tita_Card Section
 ===========
 */
 #tita_card .tita_card {
-  background: #EAECEA;
+  background: #eaecea;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -515,12 +523,11 @@ Value Section
 ===========
 */
 #value .value {
-  background: #EAECEA;
+  background: #eaecea;
   width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
-
   &_left {
     width: 50%;
   }
@@ -552,10 +559,99 @@ Value Section
         color: $neutral;
         font-size: 23px;
         font-weight: 600;
-        line-height: 21.657px; 
+        line-height: 21.657px;
         letter-spacing: 0.059px;
       }
     }
+  }
+}
+
+/*
+===========
+Update Section
+===========
+*/
+#update .update {
+  width: 70%;
+  margin: 71px auto;
+  &_top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+      font-family: $font_family_secondary;
+      font-size: 55px;
+      font-weight: 500;
+      line-height: 50px;
+      letter-spacing: 0.059px;
+    }
+    &_input {
+      font-family: inherit;
+      width: 35%;
+      display: flex;
+      input {
+        position: relative;
+        border: none;
+        outline: none;
+        width: 636px;
+        height: 60px;
+        border-radius: 80px;
+        background: #f2f2f2;
+        color: #bdbdbd;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 20.7px;
+        letter-spacing: 0.059px;
+        padding: 10px 20px;
+      }
+      .btn_gradient {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 73px;
+        height: 60px;
+        font-family: $font_family_secondary;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 20.7px;
+        letter-spacing: 0.059px;
+        padding: 18px 64px 17px 65px;
+        border-radius: 80px;
+        box-shadow: -2px -2px 24px 0px rgba(0, 0, 0, 0.2);
+        position: absolute;
+        right: 15%;
+      }
+    }
+  }
+  &_bottom {
+    margin-block-start: 35px;
+    display: flex;
+    justify-content: space-around;
+    &_nav {
+      p {
+        span {
+          font-size: 20px;
+          font-weight: 600;
+          line-height: 20.7px;
+          letter-spacing: 0.059px;
+        }
+      }
+      li {
+        padding: 20px 0;
+        a {
+          font-size: 20px;
+          font-weight: 500;
+          line-height: 20.7px;
+          letter-spacing: 0.059px;
+        }
+      }
+    }
+  }
+  .social {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
   }
 }
 
