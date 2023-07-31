@@ -52,6 +52,19 @@ body {
   letter-spacing: 0.059px;
 }
 
+.btn__light {
+  color: #7283ce;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 21.657px;
+  letter-spacing: 0.059px;
+  height: 70px;
+  padding: 24px 30px 24px 31px;
+  background: #fff;
+  box-shadow: -1px 1px 14px 0px rgba(189, 189, 189, 0.25);
+}
+
 .btn_gradient {
   width: 309px;
   height: 80px;
@@ -244,11 +257,13 @@ Loop Section
   background: linear-gradient(122deg, rgba(238, 237, 246, 0) 0.51%, rgba(60, 97, 181, 0.3) 100%);
   display: flex;
   justify-content: space-between;
-  padding: 0 50px;
+  padding: 50px;
   height: 590px;
 }
 #solution .solution #join .join_left {
   align-self: flex-end;
+  margin-block-end: -4%;
+  z-index: 1;
 }
 #solution .solution #join .join_right {
   text-align: right;
@@ -342,6 +357,114 @@ Loop Section
   font-weight: 500;
   line-height: 30px;
   letter-spacing: 0.059px;
+}
+#solution .solution #manage .manage_cards .manage_card_content p span {
+  color: #5064ae;
+  padding-top: 20px;
+}
+
+/*
+===========
+useCase Section
+===========
+*/
+#useCase .useCase {
+  background: #1f1f1f;
+  margin-block-start: 135px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70.46px;
+  color: #fff;
+  padding: 100px;
+}
+#useCase .useCase_left {
+  width: 50%;
+  text-align: center;
+}
+#useCase .useCase_left h2 {
+  font-size: 113.443px;
+  font-weight: 500;
+  line-height: 30.711px;
+  letter-spacing: 0.084px;
+  margin-block-end: 85.28px;
+}
+#useCase .useCase_left .cases {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 85.82px;
+}
+#useCase .useCase_left .cases .case {
+  display: flex;
+}
+#useCase .useCase_left .cases .case p {
+  font-size: 28.361px;
+  font-weight: 500;
+  line-height: 29.353px;
+  letter-spacing: 0.084px;
+}
+#useCase .useCase_left_btns {
+  margin-block-start: 94.08px;
+}
+#useCase .useCase_left_btns .useCase_light {
+  margin-inline-end: 10px;
+  color: inherit;
+  height: 80px;
+  padding: 0px 66px;
+  font-size: 23px;
+  font-weight: 600;
+  line-height: 21.657px;
+  letter-spacing: 0.059px;
+  background: transparent;
+  border-radius: 10px;
+  border: 3px solid #fff;
+}
+#useCase .useCase_left_btns .useCase_dark {
+  border-radius: 10px;
+  background: #5064ae;
+  width: 309px;
+  height: 80px;
+  padding: 0px 23px 0px 22px;
+  font-size: 23px;
+  font-weight: 600;
+  line-height: 21.657px;
+  letter-spacing: 0.059px;
+  color: inherit;
+}
+
+/*
+===========
+Tita_Card Section
+===========
+*/
+#tita_card .tita_card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 125.96px;
+  width: 100%;
+  padding: 76px;
+}
+#tita_card .tita_card_left h2 {
+  font-size: 73.145px;
+  font-weight: 500;
+  line-height: 70px;
+  letter-spacing: 0.213px;
+}
+#tita_card .tita_card_left p {
+  margin-block-start: 31.57px;
+  font-size: 31.2px;
+  font-weight: 500;
+  line-height: 46.9px;
+  letter-spacing: 0.059px;
+}
+#tita_card .tita_card_right {
+  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 /*
