@@ -480,6 +480,7 @@ Tita_Card Section
 ===========
 */
 #tita_card .tita_card {
+  background: #EAECEA;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -505,6 +506,56 @@ Tita_Card Section
     width: 50%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/*
+===========
+Value Section
+===========
+*/
+#value .value {
+  background: #EAECEA;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+
+  &_left {
+    width: 50%;
+  }
+  &_right {
+    width: 50%;
+    text-align: right;
+    h2 {
+      font-size: 73.145px;
+      font-weight: 500;
+      line-height: 66.318px;
+      letter-spacing: 0.213px;
+    }
+    p {
+      margin-block-start: 31.57px;
+      font-size: 31.196px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 46.935px;
+      letter-spacing: 0.213px;
+    }
+    &_btns {
+      margin-block-start: 32px;
+      .btn_blue {
+        width: 309px;
+        height: 80px;
+        padding: 0px 23px 0px 22px;
+        border-radius: 10px;
+        background: $bg_medium;
+        color: $neutral;
+        font-size: 23px;
+        font-weight: 600;
+        line-height: 21.657px; 
+        letter-spacing: 0.059px;
+      }
+    }
   }
 }
 
