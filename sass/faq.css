@@ -76,47 +76,56 @@ header .back-btn a img {
   FAQ Section
   ==========
 */
+#home .home {
+  /*
+    ==========
+    Contact Section
+    ==========
+  */
+}
 #home .home .faq {
-  margin-top: 50px;
+  margin: 50px auto 0 auto;
+  width: 70%;
 }
 #home .home .faq hr {
-  display: none;
+  display: block;
 }
 #home .home .faq-question-title {
+  margin-top: 50px;
+  width: 100%;
   font-size: 20px;
-  font-style: normal;
   font-weight: 600;
   line-height: 21.657px;
   letter-spacing: 0.059px;
   position: relative;
-  width: 250px;
 }
 #home .home .faq-question-title::after {
   position: absolute;
-  right: -20%;
-  content: url(./images/faq-dropdownBtn.svg);
+  right: 1%;
+  content: "+";
+  font-size: 20px;
   cursor: pointer;
 }
-#home .home .faq-question-title.active .faq-question-title::after {
-  content: url(./images/faq-dropdownBtn.svg);
+#home .home .faq-question-title .faq-question-title.active .faq-question-title::after {
+  content: "-";
 }
 #home .home .faq-question-answer {
   font-size: 20px;
   font-weight: 400;
+  margin: 10px 0;
   line-height: 22px;
   letter-spacing: 0.059px;
-  margin: 0;
-  display: none;
-  transition: 0.4s;
+  transition: all 0.3s linear;
   box-shadow: -6px 5px 14px 5px rgba(225, 225, 225, 0.3);
   padding: 20px;
+  display: none;
 }
 #home .home .faq-question-answer.show-answer {
   display: block;
 }
-#home .home .faq-question-answer [aria-expanded=false]::after {
-  content: url(./images/faq-dropdownBtn.svg);
+#home .home .faq [aria-expanded=false]::after {
+  content: "+";
 }
-#home .home .faq-question-answer [aria-expanded=true]::after {
-  content: url(./images/faq-dropdownBtn.svg);
+#home .home .faq [aria-expanded=true]::after {
+  content: "-";
 }/*# sourceMappingURL=faq.css.map */

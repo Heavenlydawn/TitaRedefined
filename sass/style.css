@@ -88,12 +88,43 @@ span {
 }
 
 /*
+==========
+Media Query
+==========
+*/
+@media screen and (max-width: 1000px) {
+  body {
+    max-width: 1500px;
+  }
+  .btn_light {
+    height: 80px;
+    padding: 0px 66px;
+    font-size: 23px;
+  }
+  .btn__light {
+    font-size: 22px;
+    height: 70px;
+    padding: 24px 30px 24px 31px;
+  }
+  .btn_gradient {
+    width: 309px;
+    height: 80px;
+    padding: 0px 23px 0px 22px;
+    font-size: 23px;
+  }
+}
+/*
 =========
 Header Section
 =========
 */
 #header header {
   width: 100%;
+  /*
+  ==========
+  Media Query
+  ==========
+  */
 }
 #header header .nav {
   display: flex;
@@ -118,7 +149,6 @@ Header Section
 #header header .nav_right li a:hover {
   color: #5064ae;
 }
-
 /*
 =========
 Hero Section
@@ -130,6 +160,11 @@ Hero Section
   display: flex;
   justify-content: center;
   align-items: center;
+  /*
+  ==========
+  Media Query
+  ==========
+  */
 }
 #hero .hero_content {
   display: flex;
@@ -162,6 +197,16 @@ Hero Section
   gap: 50px;
   margin-top: 41px;
 }
+@media screen and (max-width: 1200px) {
+  #hero .hero {
+    height: 100vh;
+    border: 2px solid red;
+    margin: 70px 0;
+  }
+  #hero .hero_content h1 {
+    font-size: 80px;
+  }
+}
 
 /*
 =========
@@ -174,6 +219,11 @@ Loop Section
   display: flex;
   justify-content: space-evenly;
   background: linear-gradient(181deg, rgba(94, 83, 182, 0.05) 0.51%, rgba(77, 104, 161, 0.04) 73.96%);
+  /*
+  ==========
+  Media Query
+  ==========
+  */
 }
 #loop .loop_flow {
   animation: loop 25s linear infinite;
@@ -189,7 +239,6 @@ Loop Section
   letter-spacing: 0.059px;
   padding: 20px 0;
 }
-
 /*
   ==========
   Solution Section
@@ -544,7 +593,7 @@ Update Section
   font-family: "Poppins", sans-serif;
   font-size: 55px;
   font-weight: 500;
-  line-height: 50px;
+  line-height: 70px;
   letter-spacing: 0.059px;
 }
 #update .update_top_input {
@@ -608,6 +657,11 @@ Update Section
   display: flex;
   flex-direction: column;
   gap: 3rem;
+}
+#update .update .socials {
+  display: flex;
+  align-items: center;
+  gap: 30px;
 }
 
 /*

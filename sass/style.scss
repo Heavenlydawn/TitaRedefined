@@ -4,19 +4,19 @@
 Variables
 =========
 */
-$font_family: "Montserrat", sans-serif;
-$font_family_secondary: "Poppins", sans-serif;
+$font_family: "Montserrat",
+sans-serif;
+$font_family_secondary: "Poppins",
+sans-serif;
 $neutral: #fff;
 $black: #000;
 $font_color: #5064ae;
 $bg_light: #7a91ca;
 $bg_medium: #5064ae;
 $bg_gradient: linear-gradient(108deg, #5064ae 0%, #8798e3 100%);
-$bg_gradient_light: linear-gradient(
-  122deg,
+$bg_gradient_light: linear-gradient(122deg,
   rgba(238, 237, 246, 0) 0.51%,
-  rgba(60, 97, 181, 0.3) 100%
-);
+  rgba(60, 97, 181, 0.3) 100%);
 $box-shadow: -2px -2px 24px 0px rgba(0, 0, 0, 0.2);
 $transition: all 0.3s linear;
 $light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -36,19 +36,23 @@ General Selector
   padding: 0;
   box-sizing: border-box;
 }
+
 a {
   text-decoration: none;
   color: $black;
 }
+
 li {
   list-style: none;
 }
+
 body {
   font-family: $font_family;
   width: calc(100vw - 20px);
   max-width: $max-width;
   margin: 0 auto;
 }
+
 span {
   color: $font_color;
   font-size: 20px;
@@ -56,12 +60,14 @@ span {
   line-height: 20.7px;
   letter-spacing: 0.059px;
 }
+
 .btn {
   outline: none;
   border: none;
   border-radius: 10px;
   cursor: pointer;
 }
+
 .btn_light {
   border: 3px solid $bg_medium;
   background: $neutral;
@@ -74,6 +80,7 @@ span {
   line-height: 21.657px;
   letter-spacing: 0.059px;
 }
+
 .btn__light {
   color: #7283ce;
   text-align: center;
@@ -86,12 +93,7 @@ span {
   background: #fff;
   box-shadow: -1px 1px 14px 0px rgba(189, 189, 189, 0.25);
 }
-// .btn_light:hover {
-//   background: $bg_gradient;
-//   color: $neutral;
-//   border: none;
-//   transition: $transition;
-// }
+
 .btn_gradient {
   width: 309px;
   height: 80px;
@@ -104,11 +106,37 @@ span {
   line-height: 21.657px;
   letter-spacing: 0.059px;
 }
-// .btn_gradient:hover {
-//   background: $neutral;
-//   color: $font_color;
-//   border: 3px solid $bg_medium;
-// }
+
+/*
+==========
+Media Query
+==========
+*/
+@media screen and (max-width: 1200px) {
+  body {
+    max-width: 1500px;
+  }
+
+  .btn_light {
+    height: 80px;
+    padding: 0px 66px;
+    font-size: 23px;
+  }
+
+  .btn__light {
+    font-size: 22px;
+    height: 70px;
+    padding: 24px 30px 24px 31px;
+  }
+
+  .btn_gradient {
+    width: 309px;
+    height: 80px;
+    padding: 0px 23px 0px 22px;
+    font-size: 23px;
+  }
+}
+
 /*
 =========
 Header Section
@@ -116,19 +144,23 @@ Header Section
 */
 #header header {
   width: 100%;
+
   .nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
     &_left {
       .nav-toggle {
         display: none;
       }
     }
+
     &_right {
       display: flex;
       align-items: center;
       gap: 100px;
+
       li {
         a {
           color: $black;
@@ -136,6 +168,7 @@ Header Section
           font-weight: 600;
           line-height: 21.657px;
           letter-spacing: 0.059px;
+
           &:hover {
             color: $font_color;
           }
@@ -143,7 +176,26 @@ Header Section
       }
     }
   }
+
+  /*
+==========
+Media Query
+==========
+*/
+  @media screen and (max-width:1200px) {
+    .nav {
+
+      &_right {
+        // gap: 100px;
+
+      }
+    }
+  }
+
+
+
 }
+
 /*
 =========
 Hero Section
@@ -155,6 +207,7 @@ Hero Section
   display: flex;
   justify-content: center;
   align-items: center;
+
   &_content {
     display: flex;
     justify-content: center;
@@ -162,6 +215,7 @@ Hero Section
     flex-direction: column;
     text-align: center;
     width: 1148px;
+
     h1 {
       color: #5064ae;
       text-align: center;
@@ -170,6 +224,7 @@ Hero Section
       font-weight: 900;
       letter-spacing: 0.045px;
     }
+
     p {
       color: $black;
       text-align: center;
@@ -178,6 +233,7 @@ Hero Section
       line-height: 28.7px;
       letter-spacing: 0.059px;
     }
+
     &_btn {
       display: flex;
       align-items: center;
@@ -186,7 +242,29 @@ Hero Section
       margin-top: 41px;
     }
   }
+
+  /*
+  ==========
+  Media Query
+  ==========
+  */
+  @media screen and (max-width:1200px) {
+    height: 100vh;
+    border: 2px solid red;
+    margin: 70px 0;
+
+    &_content {
+      h1 {
+        font-size: 80px;
+      }
+
+    }
+  }
+
 }
+
+
+
 /*
 =========
 Loop Section
@@ -197,11 +275,10 @@ Loop Section
   overflow: hidden;
   display: flex;
   justify-content: space-evenly;
-  background: linear-gradient(
-    181deg,
-    rgba(94, 83, 182, 0.05) 0.51%,
-    rgba(77, 104, 161, 0.04) 73.96%
-  );
+  background: linear-gradient(181deg,
+      rgba(94, 83, 182, 0.05) 0.51%,
+      rgba(77, 104, 161, 0.04) 73.96%);
+
   &_flow {
     animation: loop 25s linear infinite;
     overflow: hidden;
@@ -216,20 +293,31 @@ Loop Section
     letter-spacing: 0.059px;
     padding: 20px 0;
   }
+
+
+
+/*
+==========
+Media Query
+==========
+*/
+  @media screen and (max-width:500px) {}
 }
 
 /*
-  ==========
-  Solution Section
-  ==========
-  */
+==========
+Solution Section
+==========
+*/
 
 #solution .solution {
   margin-block-start: 174px;
+
   &_header {
     text-align: center;
     width: 780px;
     margin: 0 auto;
+
     h2 {
       font-size: 80px;
       font-weight: 500;
@@ -237,6 +325,7 @@ Loop Section
       letter-spacing: 0.059px;
       margin-block-end: 60px;
     }
+
     p {
       font-size: 20px;
       font-weight: 500;
@@ -244,12 +333,14 @@ Loop Section
       letter-spacing: 0.059px;
     }
   }
+
   &_cards {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 30px;
     margin-block-start: 65px;
+
     .solution_card {
       width: 456px;
       height: 336px;
@@ -257,11 +348,13 @@ Loop Section
       background: #fff;
       box-shadow: 1px 1px 34px 10px rgba(187, 187, 187, 0.15);
       padding: 15px;
+
       &_img {
         display: flex;
         align-items: center;
         gap: 14px;
         margin-block-start: 80px;
+
         p {
           color: $font_color;
           font-size: 20px;
@@ -270,6 +363,7 @@ Loop Section
           letter-spacing: 0.059px;
         }
       }
+
       &_content {
         p {
           margin-block-start: 50px;
@@ -294,16 +388,19 @@ Loop Section
     justify-content: space-between;
     padding: 50px;
     height: 590px;
+
     &_left {
       align-self: flex-end;
       margin-block-end: -4%;
       z-index: 1;
     }
+
     &_right {
       text-align: right;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+
       &_top {
         p {
           font-size: 49px;
@@ -311,14 +408,18 @@ Loop Section
           line-height: 30px;
           letter-spacing: 0.059px;
         }
+
         button {
           margin-block-start: 35px;
         }
+
         .music {
           display: flex;
+
           h2 {
             margin-block-start: 35px;
           }
+
           h2 {
             font-size: 49px;
             font-weight: 600;
@@ -327,8 +428,10 @@ Loop Section
           }
         }
       }
+
       &_bottom {
         align-self: flex-end;
+
         p {
           text-align: left;
           font-size: 20px;
@@ -348,14 +451,17 @@ Loop Section
   */
   #manage .manage {
     margin-block-start: 174px;
+
     &_header {
       text-align: center;
+
       h2 {
         font-size: 80px;
         font-weight: 500;
         line-height: 21.657px;
         letter-spacing: 0.059px;
       }
+
       p {
         font-size: 20px;
         font-weight: 500;
@@ -366,11 +472,13 @@ Loop Section
         margin: 60px auto;
       }
     }
+
     &_cards {
       display: flex;
       justify-content: center;
       align-items: center;
       gap: 30px;
+
       .manage_card {
         width: 456px;
         height: 336px;
@@ -378,11 +486,13 @@ Loop Section
         background: #fff;
         padding: 15px;
         box-shadow: 1px 1px 34px 10px rgba(187, 187, 187, 0.15);
+
         &_img {
           display: flex;
           align-items: center;
           gap: 14px;
           margin-block-start: 80px;
+
           p {
             color: $font_color;
             font-size: 20px;
@@ -391,6 +501,7 @@ Loop Section
             letter-spacing: 0.059px;
           }
         }
+
         &_content {
           p {
             margin-block-start: 50px;
@@ -398,6 +509,7 @@ Loop Section
             font-weight: 500;
             line-height: 30px;
             letter-spacing: 0.059px;
+
             span {
               color: $font_color;
               padding-top: 20px;
@@ -423,9 +535,11 @@ useCase Section
   gap: 70.46px;
   color: $neutral;
   padding: 100px;
+
   &_left {
     width: 50%;
     text-align: center;
+
     h2 {
       font-size: 113.443px;
       font-weight: 500;
@@ -433,6 +547,7 @@ useCase Section
       letter-spacing: 0.084px;
       margin-block-end: 85.28px;
     }
+
     .cases {
       text-align: left;
       display: flex;
@@ -440,6 +555,7 @@ useCase Section
       justify-content: center;
       align-items: center;
       gap: 85.82px;
+
       .case {
         display: flex;
 
@@ -451,8 +567,10 @@ useCase Section
         }
       }
     }
+
     &_btns {
       margin-block-start: 94.08px;
+
       .useCase_light {
         margin-inline-end: 10px;
         color: inherit;
@@ -466,6 +584,7 @@ useCase Section
         border-radius: 10px;
         border: 3px solid #fff;
       }
+
       .useCase_dark {
         border-radius: 10px;
         background: $bg_medium;
@@ -495,6 +614,7 @@ Tita_Card Section
   gap: 125.96px;
   width: 100%;
   padding: 76px;
+
   &_left {
     h2 {
       font-size: 73.145px;
@@ -502,6 +622,7 @@ Tita_Card Section
       line-height: 70px;
       letter-spacing: 0.213px;
     }
+
     p {
       margin-block-start: 31.57px;
       font-size: 31.2px;
@@ -510,6 +631,7 @@ Tita_Card Section
       letter-spacing: 0.059px;
     }
   }
+
   &_right {
     width: 50%;
     display: grid;
@@ -528,18 +650,22 @@ Value Section
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
+
   &_left {
     width: 50%;
   }
+
   &_right {
     width: 50%;
     text-align: right;
+
     h2 {
       font-size: 73.145px;
       font-weight: 500;
       line-height: 66.318px;
       letter-spacing: 0.213px;
     }
+
     p {
       margin-block-start: 31.57px;
       font-size: 31.196px;
@@ -548,8 +674,10 @@ Value Section
       line-height: 46.935px;
       letter-spacing: 0.213px;
     }
+
     &_btns {
       margin-block-start: 32px;
+
       .btn_blue {
         width: 309px;
         height: 80px;
@@ -574,6 +702,7 @@ Update Section
 #update .update {
   width: 70%;
   margin: 71px auto;
+
   &_top {
     display: flex;
     justify-content: center;
@@ -583,13 +712,15 @@ Update Section
       font-family: $font_family_secondary;
       font-size: 55px;
       font-weight: 500;
-      line-height: 50px;
+      line-height: 70px;
       letter-spacing: 0.059px;
     }
+
     &_input {
       font-family: inherit;
       width: 35%;
       display: flex;
+
       input {
         position: relative;
         border: none;
@@ -605,6 +736,7 @@ Update Section
         letter-spacing: 0.059px;
         padding: 10px 20px;
       }
+
       .btn_gradient {
         display: flex;
         justify-content: center;
@@ -624,10 +756,12 @@ Update Section
       }
     }
   }
+
   &_bottom {
     margin-block-start: 35px;
     display: flex;
     justify-content: space-around;
+
     &_nav {
       p {
         span {
@@ -637,8 +771,10 @@ Update Section
           letter-spacing: 0.059px;
         }
       }
+
       li {
         padding: 20px 0;
+
         a {
           font-size: 20px;
           font-weight: 500;
@@ -648,10 +784,17 @@ Update Section
       }
     }
   }
+
   .social {
     display: flex;
     flex-direction: column;
     gap: 3rem;
+  }
+
+  .socials {
+    display: flex;
+    align-items: center;
+    gap: 30px;
   }
 }
 
@@ -664,6 +807,7 @@ Key Frames
   from {
     transform: translateX(0%);
   }
+
   to {
     transform: translateX(100%);
   }

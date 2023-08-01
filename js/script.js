@@ -21,8 +21,5 @@ faqQuestions.forEach((question) => {
 
     // Toggle hidden attribute on answer
     answer.classList.toggle("show-answer");
-
-    // answer.hidden = !answer.hidden;
-    // console.log(answer)
   });
 });
